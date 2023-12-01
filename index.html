@@ -33,9 +33,15 @@
         <span class="sound">clap</span>
       </div>
     </div>
-    <audio data-type="1" src="voices/1.mp3"></audio>
-    <audio data-type="2" src="voices/2.mp3"></audio>
-    <audio data-type="3" src="voices/3.mp3"></audio>
-    <audio data-type="4" src="voices/4.mp3"></audio>
+    <audio data-key="1" src="voices/1.mp3"></audio>
+    <audio data-key="2" src="voices/2.mp3"></audio>
+    <audio data-key="3" src="voices/3.mp3"></audio>
+    <audio data-key="4" src="voices/4.mp3"></audio>
+
+    <script>
+      window.addEventListener("keydown", function (e) {
+        console.log(e);
+      });
+    </script>
   </body>
 </html>
