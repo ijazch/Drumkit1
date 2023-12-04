@@ -1,8 +1,15 @@
 window.addEventListener("keydown", function (e) {
-  const audio = this.document.querySelector(`audio[data-key="${e.keycode}"]`);
-  const key = this.document.querySelector(`.key[data-key="${e.keycode}"]`);
+  console.log(e.keycode);
+
+  const audio = this.document.querySelector(`audio[data-key="${e.which}"]`);
+  const key = this.document.querySelector(`.key[data-key="${e.which}"]`);
   if (!audio) return; // nothing will be happen
   audio.currentTime = 0; // come back
   audio.play();
   console.log(e);
+});
+
+window.addEventListener("keydown", function (e) {
+  console.log("second");
+  console.log(e.which);
 });
