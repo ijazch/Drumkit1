@@ -7,4 +7,10 @@ window.addEventListener("keydown", function (e) {
   audio.currentTime = 0; // come back
   audio.play();
   console.log(e.which);
+
+  if (key.classList.contains("playing")) {
+    key.classList.remove("playing");
+  } else {
+    key.classList.add("playing");
+  }
 });
